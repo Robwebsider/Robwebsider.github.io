@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Bitter', serif;
+    background-color: #3E54AC;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bitter', serif;
+    
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-family: 'Bitter', serif;
+    
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+.tarjeta-de-digiloser{
+    width: 180px;
+    height: 100px;
+    background: #AA77FF;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+.tarjeta-de-digiloser img {
+    width: 100px;
+}
+
+#boton-mascota {
+width: 180px;
+height: 40px;
+border-radius: 20px;
+background: transparent;
+border: 2px solid white;
+color: white;
+font-family: 'Poppins', sans-serif;
+margin: 30px;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque1 {
+    background-color: #F97B22;
+    margin: 20px;
+    color: white;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+}
+.boton-de-ataque2 {
+    background-color: #19A7CE;
+    color: white;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+}
+.boton-de-ataque3 {
+    background-color: #B99B6B;
+    color: white;
+    margin: 20px;
+    font-family: 'Bitter', serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+}
+
+  input {
+    display:none;
+  }
+
+
