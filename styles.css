@@ -27,7 +27,7 @@ body {
     font-family: 'Bitter', serif;
 }
 
-.tarjetas {
+.tarjetas, .tarjetas-ataques {
     display: flex;
     gap: 10px;
 }
@@ -64,41 +64,118 @@ margin: 30px;
     align-items: center;
 }
 
-.boton-de-ataque1 {
-    background-color: #F97B22;
+.boton-de-ataque {
+    background-color: transparent;
     margin: 20px;
     color: white;
-    font-family: 'Bitter', serif;
+    /* font-family: 'Bitter', serif; */
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 180px;
-    height: 40px;
-}
-.boton-de-ataque2 {
-    background-color: #19A7CE;
-    color: white;
-    font-family: 'Bitter', serif;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
-}
-.boton-de-ataque3 {
-    background-color: #B99B6B;
-    color: white;
-    margin: 20px;
-    font-family: 'Bitter', serif;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
+    width: 80px;
+    height: 55px;
+    font-size: 26px;
 }
 
+
+#mensajes {
+    width: 280px;
+    background: #AA77FF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bitter', serif;
+}
+
+#boton-reiniciar {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    border: solid 1px white;
+    background-color: dodgerblue;
+    margin: 20px;
+    width: 199px;
+    height: 514px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
   input {
     display:none;
   }
+
+  input:checked + label {
+    background-color: red;
+
+  }
+
+  #ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    #ver-mapa button { 
+        width: 80px;
+        height: 40px;
+        border-radius: 20px;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 0;
+                
+    }
+
+  @media (hover: hover) {
+    .boton-de-ataque:hover, #ver-mapa button:hover, .tarjeta-de-digiloser:hover, #boton-mascota:hover, #boton-reiniciar:hover  {
+        background-color: red;
+
+
+    }
+  }
+
+  @media (max-width:300px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    }
 
 
